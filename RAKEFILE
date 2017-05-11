@@ -1,0 +1,9 @@
+desc 'Publish site via rsync'
+task :deploy do
+  puts 'Publishing your website, silence is golden...'
+  user = 'scenario74.com'
+  server = 's219633.gridserver.com'
+  path = 'domains/website.com/html'
+  sh "rsync -rtzh --delete _site/ #{user}@#{server}:#{path}"
+  puts 'Finished'
+end
