@@ -1,0 +1,31 @@
+{
+  "name": "start-jekyll",
+  "version": "1.0.0",
+  "description": "A starter jekyll setup",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postinstall": "./node_modules/.bin/frontend-dependencies"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.18.8",
+    "del": "^2.2.2",
+    "frontend-dependencies": "^0.2.1",
+    "gulp": "^3.9.1",
+    "gulp-run": "^1.7.1",
+    "gulp-sass": "^3.1.0",
+    "gulp-util": "^3.0.8",
+    "run-sequence": "^1.2.2"
+  },
+  "dependencies": {
+    "picturefill": "^3.0.2"
+  },
+  "frontendDependencies": {
+    "target": "_dev/scripts",
+    "packages": [
+      "picturefill/dist/*"
+    ]
+  }
+}

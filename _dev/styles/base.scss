@@ -1,0 +1,178 @@
+
+/*------------------------------------*\
+    #BASIC-STYLING
+\*------------------------------------*/
+html, body {
+  background: #989;
+  font-family: $text-font;
+  font-weight: 400;
+  color: $text-color;
+}
+
+
+
+
+
+/*------------------------------------*\
+    #IMAGES
+\*------------------------------------*/
+img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+
+
+
+
+/*------------------------------------*\
+    #FIGURES
+\*------------------------------------*/
+figure {
+  position: relative;
+}
+
+
+
+
+
+/*------------------------------------*\
+    #LISTS
+\*------------------------------------*/
+ul, ol {
+  margin-left: $spacing-unit;
+}
+
+
+
+
+
+/*------------------------------------*\
+    #HEADINGS
+\*------------------------------------*/
+h1, h2, h3, h4, h5, h6 {
+  font-family: $display-font;
+  font-weight: 700;
+}
+
+
+
+
+
+/*------------------------------------*\
+    #LINKS
+\*------------------------------------*/
+a {
+  color: $text-color;
+  text-decoration: none;
+
+  // &:visited {
+  //     color: lighten(#000, 15%);
+  // }
+
+  &:hover {
+      color: $text-color;
+  }
+}
+
+
+
+
+
+/*------------------------------------*\
+    #BLOCKQUOTES
+\*------------------------------------*/
+blockquote {
+    color: $grey-color;
+    border-left: 4px solid $grey-color-light;
+    padding-left: $spacing-unit / 2;
+    font-size: 18px;
+    letter-spacing: -1px;
+    font-style: italic;
+
+    > :last-child {
+        margin-bottom: 0;
+    }
+}
+
+
+
+
+
+/*------------------------------------*\
+    #CODE-FORMATTING
+\*------------------------------------*/
+pre,
+code {
+    font-size: 15px;
+    border: 1px solid $grey-color-light;
+    border-radius: 3px;
+    background-color: #eef;
+}
+
+code {
+    padding: 1px 5px;
+}
+
+pre {
+    padding: 8px 12px;
+    overflow-x: scroll;
+
+    > code {
+        border: 0;
+        padding-right: 0;
+        padding-left: 0;
+    }
+}
+
+
+
+
+
+/*------------------------------------*\
+    #CLEARFIX
+\*------------------------------------*/
+%clearfix {
+
+    &:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+
+
+
+
+/*------------------------------------*\
+    #ICONS
+\*------------------------------------*/
+.icon {
+
+    > svg {
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+        vertical-align: middle;
+
+        path {
+            fill: $grey-color;
+        }
+    }
+}
+
+
+
+
+/*------------------------------------*\
+    #UTILITIES
+\*------------------------------------*/
+
+.bold {
+	font-weight: 700;
+}
+
+.center {
+  text-align: center;
+}
