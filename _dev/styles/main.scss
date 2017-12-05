@@ -3,11 +3,8 @@
 /**
 * CONTENTS
 *
-* Reset................................Level the playing field.
-* Global...............................Globally available variables and config.
-* Mixins...............................Useful Mixins.
 * BASE.................................Establish some base styles.
-* GRID.................................We enjoy order.
+* LAYOUT...............................Everything else.
 **/
 
 
@@ -15,8 +12,6 @@
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
-        "config",
-        "mixins",
         "base",
         "layout"
 ;
